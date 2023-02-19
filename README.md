@@ -1,6 +1,6 @@
-# Quasar Enterprise Architecture (quasar-project)
+# Quasar Enterprise Template
 
-Highly opinionated Vue JS template built on top of Quasar Framework
+Highly opinionated Vue 3 template built on top of Quasar Framework
 
 ## Install the dependencies
 ```bash
@@ -11,7 +11,7 @@ npm install
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
-quasar dev
+npm run dev
 ```
 
 
@@ -32,10 +32,16 @@ npm run format
 
 
 
+### Build the app for staging
+```bash
+npm run qa
+```
+
 ### Build the app for production
 ```bash
-quasar build
+npm run prod
 ```
+
 
 ### Customize the configuration
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
