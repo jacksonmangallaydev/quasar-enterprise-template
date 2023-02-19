@@ -7,8 +7,8 @@
   "private": true,
   "scripts": {
     "dev": "set NODE_ENV=development&& quasar dev",
-    "qa": "set NODE_ENV=staging&& quasar build",
-    "prod": "set NODE_ENV=production&& quasar build",
+    "stage": "set NODE_ENV=staging&& quasar build",
+    "build": "set NODE_ENV=production&& quasar build",
     "lint": "eslint --ext .js,.ts,.vue ./",
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0"
