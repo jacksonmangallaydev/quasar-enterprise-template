@@ -5,7 +5,7 @@
       <q-card-section class="bg-primary text-white q-py-md headerTitle">
         <div class="row">
           <div class="col">
-            <span class="text-h6">Dialog Header</span>
+            <span class="text-h6">{{ label }}</span>
           </div>
         </div>
       </q-card-section>
@@ -47,6 +47,15 @@
 
 <script setup lang="ts">
 import { computed, useAttrs } from 'vue';
+
+withDefaults(
+  defineProps<{
+    label?: string;
+  }>(),
+  {
+    label: 'Dialog Header',
+  }
+);
 
 const attrs = useAttrs();
 const emit = defineEmits(['update', 'create']);
