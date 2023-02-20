@@ -1,1 +1,18 @@
 // app global css in SCSS form
+.app-modal {
+  min-width: 10vw;
+}
+
+.size-md .app-modal {
+  min-width: 30vw;
+}
+
+.size-lg .app-modal {
+  min-width: 60vw;
+}
+
+.hoc-app-dialog {
+  max-height: 50vh;
+  min-height: 100px;
+  width: 100%;
+}
